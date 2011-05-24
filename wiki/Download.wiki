@@ -1,0 +1,33 @@
+#summary How to download reinCRUD
+#labels Phase-Deploy,Featured
+
+= Download =
+
+spring-security-social is available from the following repositories. Add them to your pom.xml and then add the following dependency:
+
+{{{
+<dependency>
+  <groupId>org.springframework.security.social</groupId>
+  <artifactId>spring-security-social</artifactId>
+  <version>1.0-SNAPSHOT</version>
+</dependency>
+}}}
+
+Our corporate maven repository:
+
+{{{
+<repository>
+	<id>acoveo</id>
+	<url>http://www.acoveo.com/maven2/repo</url>
+	<snapshots>
+		<enabled>false</enabled>
+	</snapshots>
+</repository>
+<repository>
+	<id>acoveo-snapshots</id>
+	<url>http://www.acoveo.com/maven2/snapshots</url>
+	<releases>
+		<enabled>false</enabled>
+	</releases>
+</repository>
+}}}

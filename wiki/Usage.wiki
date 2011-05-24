@@ -40,7 +40,7 @@ In order to get a valid setup, you have to add the following snippet to your spr
 }}}
 
 Things you need to change are:
- * *userDetailsService*: This should be a service implementing UserDetailsService, which maps from username strings like *oauth2:facebook:XXX* to UserDetails objects.
+ * *userDetailsService*: This should be a service implementing !UserDetailsService, which maps from username strings like *oauth2:facebook:XXX* to !UserDetails objects.
  * *clientId="xxx" clientSecret="xxx"*: This will be you facebook App ID and secret, which you have created using the [http://www.facebook.com/developers/ facebook developers app].
 
 Things you can change:

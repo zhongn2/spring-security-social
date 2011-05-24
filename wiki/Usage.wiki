@@ -63,11 +63,11 @@ public class SecurityService implements UserDetailsService, ApplicationListener<
 			fakeAuthorities.add(new GrantedAuthorityImpl("ROLE_USER"));
 			fakeAuthorities.add(new GrantedAuthorityImpl("ROLE_ADMIN"));
 		}
-		
+		... getters / setter ...
 	}
 	public UserDetails loadUserByUsername(String username)
 			throws UsernameNotFoundException, DataAccessException {
-		... Create new user object in the database ...
+		... Fetch existing, or create new user object in the database ...
 		return new CustomUserDetails(username, "RANDOMPASSWORD");
 	}
 	/** This method is called whenever authentication with a third party

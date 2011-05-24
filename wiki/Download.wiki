@@ -1,4 +1,4 @@
-#summary How to download reinCRUD
+#summary How to download spring-security-social
 #labels Phase-Deploy,Featured
 
 = Download =
@@ -31,3 +31,20 @@ Our corporate maven repository:
 	</releases>
 </repository>
 }}}
+
+== Example ==
+Our example application, which demonstrates how to integrate spring-security-social into a Tapestry web application, is available from
+{{{
+https://acoveo.com/svnroot/business/public/trunk/spring-security-social-example
+}}}
+
+Simply check-out the project and run it with the maven jetty plug-in:
+{{{
+cd /tmp
+svn co https://acoveo.com/svnroot/business/public/trunk/spring-security-social-example
+cd spring-security-social-example
+mvn jetty:run
+}}}
+Then visit http://localhost:8080/login and click on the Facebook button.
+
+In addition to spring-security-social the example application also integrates spring-security-openid for a complete demonstration.

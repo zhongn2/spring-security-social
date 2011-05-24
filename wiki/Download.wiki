@@ -32,6 +32,10 @@ Our corporate maven repository:
 </repository>
 }}}
 
+== Source code ==
+The source code of the project and the example is hosted on
+[https://acoveo.com/svnroot/business/public/trunk/].
+
 == Example ==
 Our example application, which demonstrates how to integrate spring-security-social into a Tapestry web application, is available from
 {{{

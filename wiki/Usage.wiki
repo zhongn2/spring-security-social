@@ -48,6 +48,8 @@ Things you can change:
  * *scope="email"*: You might request additional [http://developers.facebook.com/docs/authentication/permissions/ facebook permissions].
  * *oauth2TokenServices*: You can use a different implementation which keeps oauth tokens between restarts if you like.
 
+*ATTENTION*: Make sure you add all the domains you use to redirect to in your facebook app settings. See [http://stackoverflow.com/questions/7382698 stackoverflow] and [https://developers.facebook.com/blog/post/570/ developers.facebook.com] for more details.
+
 One problem you still have to solve is that you have to create users automatically in the background as soon as the filter has granted access. Here is some pseudocode:
 
 {{{

@@ -49,6 +49,6 @@ svn co https://acoveo.com/svnroot/business/public/trunk/spring-security-social-e
 cd spring-security-social-example
 mvn jetty:run
 }}}
-Then visit http://localhost:8080/login and click on the Facebook button.
+Then visit http://localhost:8080/newapp/login and click on the Facebook button.
 
 In addition to spring-security-social the example application also integrates spring-security-openid for a complete demonstration.
